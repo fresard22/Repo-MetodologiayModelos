@@ -1,0 +1,54 @@
+{
+  "CSMain": {
+    "domain": "1",
+    "title": "Estás en ",
+    "text": "El sistema ha pre-seleccionado estos ejercicios para tí. Escoge el grado de dificultad:",
+    "noData": "El tutor estima que ya has adquirido los aprendizajes básicos de este tópico en los ejercicios que has realizado, y no tenemos más ejercicios en esta plataforma para mejorar estos aprendizajes -al menos por ahora. ¡Puedes seguir resolviendo ejercicios en otros tópicos!",
+    "completeMsgService": "Felicidades",
+    "waitMsgExperimental": "Seleccionando ejercicio(s)...",
+    "waitMsgControl": "Seleccionando ejercicio...",
+    "controlTag": "tutor-control",
+    "experimentalTag": "joint-control",
+    "completeTopic": "Complete topic",
+    "topic1": { "topic": "productos notables", "registerTopic": "44" },
+    "topic2": { "topic": "factorización", "registerTopic": "4" },
+    "topic3": { "topic": "potencias", "registerTopic": "19" },
+    "topic4": { "topic": "raíces", "registerTopic": "68" },
+    "topic5": { "topic": "notación cientifica", "registerTopic": "69" },
+    "topic6": { "topic": "fracciones", "registerTopic": "31" },
+    "topic7": { "topic": "ecuaciones lineales", "registerTopic": "33" },
+    "topic8": { "topic": "ecuaciones cuadráticas", "registerTopic": "24" },
+    "topic9": { "topic": "álgebra de polinomios", "registerTopic": "52" },
+    "topic10": { "topic": "ejercicios con contexto", "registerTopic": "34" },
+    "topic11": { "topic": "otro tópico", "registerTopic": "" }
+  },
+  "card": {
+    "text": "Ejercicio de "
+  },
+  "lastExercise": {
+    "lastExerciseDone": "Último ejercicio realizado:  ",
+    "topic1": {
+      "type": "ecc5s",
+      "name": "Ecuaciones Cuadráticas"
+    },
+    "topic2": {
+      "type": "secl5s",
+      "name": "Sistema de Ecuaciones Lineales"
+    },
+    "topic3": {
+      "type": "ecl2s",
+      "name": "Ecuaciones Lineales"
+    },
+    "noDataTarget": "No encontrado"
+  },
+  "completeTopic": {
+    "title": "Felicidades",
+    "text": "Has completado este capítulo"
+  },
+  "ratingQuestion": {
+    "controlQuestion": "¿Cómo fue tu experiencia con este ejercicio que el sistema eligio para tí?",
+    "experimentalQuestion": "¿Cómo fue tu experiencia con este ejercicio escogido?",
+    "buttonMsg": "Siguiente Ejercicio",
+    "buttonWaitMsg": "Actualizando  "
+  }
+}
