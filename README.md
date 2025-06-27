@@ -142,6 +142,11 @@ NOTA:
 	[*] Eliminar un contenedor detenido
 		docker rm Mateo
 
+  ## ROLLBACK Y VERSIONADO DOCKER (LINUX)
+
+[1] export IMAGE_TAG=v1.0
+[2] docker compose up -d
+
 
 ***************************************************************************************************************
 ### DESPLIEGUE EN SERVER (Server del Curso)
