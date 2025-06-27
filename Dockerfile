@@ -1,20 +1,20 @@
 # Usa una imagen base de Node
 FROM node:20
 
-# Instala pnpm
-RUN npm install -g pnpm
-
-# Clona el repositorio de GitHub desde la rama "frontend"
-RUN git clone --branch frontend-creacion-modificacion https://github.com/fresard22/FrontEnd-MateoTutor.git /MateoTutor
-
-# Establece el directorio de trabajo en el proyecto clonado
+# Establece el directorio de trabajo
 WORKDIR /MateoTutor
 
-# Instala las dependencias del proyecto en la carpeta "node_modules", usando pnpm
-RUN pnpm install
+# Copia los archivos de definición de dependencias PRIMERO para aprovechar el cache
+COPY package.json pnpm-lock.yaml ./
 
-# Expone el puerto 3000 para acceder al servidor de desarrollo (LocalHost)
+# Instala pnpm y las dependencias
+RUN npm install -g pnpm && pnpm install
+
+# Copia el resto del código de tu aplicación
+COPY . .
+
+# Expone el puerto 3000
 EXPOSE 3000
 
-# Comando para iniciar el servidor de desarrollo
+# Comando para iniciar la aplicación
 CMD ["npm", "run", "dev"]

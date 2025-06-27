@@ -1,0 +1,21 @@
+# Versión de la sintaxis de Docker Compose
+version: '3.8'
+
+# Definición de los servicios (contenedores)
+services:
+  # Nombre del servicio, puede ser lo que quieras (ej. 'web', 'app', 'frontend')
+  frontend:
+    # Nombre de la imagen que se construirá o usará.
+    # Usamos una variable de entorno llamada IMAGE_TAG para la versión.
+    # Si la variable no está definida, usará 'latest' por defecto.
+    image: fmatutor/frontend:${IMAGE_TAG:-latest}
+    
+    # Contexto de construcción: '.' significa que buscará el Dockerfile en el directorio actual.
+    build: .
+    
+    # Mapeo de puertos: <puerto_host>:<puerto_contenedor>
+    ports:
+      - "3000:3000"
+      
+    # Nombre que le daremos al contenedor para identificarlo fácilmente
+    container_name: mateo_tutor_frontend
